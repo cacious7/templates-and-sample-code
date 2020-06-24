@@ -1,0 +1,538 @@
+/*
+Theme Name: 	ShoppyStore Child
+Theme Uri:  	http://www.smartaddons.com/themes/sw_shoppy
+Description:    A child theme of SW ShoppyStore
+Author:     	smartaddons
+Author Uri: 	http://www.smartaddons.com/
+Template:   	shoppystore
+Version:    	2.4.1
+License:    	GNU General Public License v2 or later
+*/
+
+/*
+  --start--CUSTOM CHANGES MADE BY "CACIOUS SIAMUNYANGA"
+*/
+
+/* --start-- Desktop and Tablet STYLES */
+
+/* --start-- NAVIGATION BAR */
+
+/**
+* MEGA MENU - REMOVE EXTRA SPACE IN MARGIN
+*/
+
+#yt_header > div > div.yt-header-middle > div > div > div.col-lg-9.col-md-10.col-sm-12.col-xs-12.yt-megamenu {
+  margin-top: 2.65em !important;
+}
+
+/* LOGO */
+
+/* NON-STICKY MENU */
+
+#yt_header > div > div.yt-header-middle > div > div > div.col-lg-3.col-md-2.col-sm-12.col-xs-12.logo-wrapper > a > img {
+  max-width: 26% !important;
+  margin: 1em 0 0 4.45em;
+}
+
+/* STICKY MENU */
+
+#yt_header > div > div.yt-header-middle.sticky-menu > div > div > div.col-lg-3.col-md-2.col-sm-12.col-xs-12.logo-wrapper > a > img {
+  max-width: 26% !important;
+  margin: 0em 4.45em !important;
+}
+
+/* MENU SIZING / HEADER UNDER*/
+
+#yt_header > div > div.yt-header-middle.sticky-menu > div > div > div.col-lg-9.col-md-10.col-sm-12.col-xs-12.yt-megamenu > div {
+  padding-top: 0 !important;
+  margin-top: -1.4em !important;
+}
+
+/* HEADER MIDDLE */
+
+#yt_header > div > div.yt-header-middle {
+  padding: 0 !important;
+}
+
+/* MEGA-MENU */
+
+#yt_header > div > div.yt-header-middle > div > div > div.col-lg-9.col-md-10.col-sm-12.col-xs-12.yt-megamenu {
+  margin-top: 2.5em !important;
+}
+
+#sw_woo_slider_widget_1 > div.resp-slider-container > div > div > div > div.item.slick-slide.slick-current.slick-active > div > div > div.item-content > div.add-info > a.compare.button {
+  display: none;
+}
+
+/* --end-- NAVIGATION BAR */
+
+/* --start-- SHOPPING CART */
+
+.top-form.top-form-minicart.minicart-product-style.pull-right {
+  top: -0.25em !important;
+  position: relative !important;
+}
+
+/* Change checkout button background to red to improve 
+ * visibility for new users especially. 
+*/
+
+a.checkout-button.button.alt.wc-forward {
+  color: #df1f26 !important;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* make sure the hovered matches the apply coupon button hover style for balance */
+
+a.checkout-button.button.alt.wc-forward:hover {
+  background-color: #df1f26 !important;
+  color: white !important;
+  border: 1px solid #ff0008 !important;
+}
+
+/* --end-- SHOPPING CART */
+
+/*CHECKOUT PAGE*/
+
+#payment > ul > li > label {
+  display: flex;
+}
+
+/* --start-- PRODUCT PAGE */
+
+/*reduced padding size of every product's container to make buttons fit in container */
+
+li.item.product > div {
+  padding: 0.5em !important;
+}
+
+/* --end-- PRODUCT PAGE */
+
+/* --start-- SHOP PAGE */
+
+/* 
+* REMOVE DEFAULT CATEGORIES SECTION
+* Fix home page category menu. make invisible until 
+* categories element is hovered 
+*/
+
+/* FORCE DROPDOWN TO DISSAPPEAR */
+
+ul#menu-categories-1 {
+  display: none;
+}
+
+/* force dropdown to display when category header is hovered */
+
+.ver-megamenu-header:hover ul#menu-categories-1 {
+  display: block !important;
+}
+
+/* --end-- SHOP PAGE */
+
+/* --start-- MY ACCOUNT PAGE */
+
+body.page-id-29.page-my-account {
+  background: #f1f1f1 !important;
+}
+
+body.page-id-29.page-my-account div.yt-header.wrap#yt_header,
+body.page-id-29.page-my-account div.yt-footer.wrap#yt_footer {
+  display: none;
+}
+
+.page-id-29.mobile-layout #header.header {
+  display: none;
+}
+
+.mobile-input-fields {
+  padding: 10px;
+  border: 1px solid #ccc !important;
+  background: white !important;
+}
+
+.mobile-layout.woocommerce-account.woocommerce-page #customer_login h2 {
+  font-size: 22px;
+}
+
+.woocommerce-account #contents {
+  display: none;
+}
+
+#custom-social-login .apsl-login-new-text {
+  text-align: center;
+  background: #307dbb;
+  margin: 1.6em 0 1.2em 0;
+  padding: 0.4em 0;
+  color: white;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid #307cbbd4;
+  transition: all 0.1s ease-out;
+}
+
+#custom-social-login .apsl-login-new-text:hover {
+  background: #307cbbd4;
+  border: 1px solid #307dbb;
+  box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+#custom-social-login .apsl-login-new-text:active {
+  background: white;
+  border: 1px solid #307dbb;
+  color: #307dbb;
+  box-shadow: 0 0 0 white;
+}
+
+#custom-social-login .apsl-login-new-text:focus {
+  background: white;
+  border: 1px solid #307dbb;
+  color: #307dbb;
+  box-shadow: 0 0 0 white;
+}
+
+/* --end-- MY ACCOUNT PAGE */
+
+/* --end-- Desktop and Tablet STYLES */
+
+/* --start-- MOBILE STYLES */
+
+.mobile-layout.woocommerce-account.woocommerce-page #customer_login h2 {
+  margin-bottom: 0;
+}
+
+.mobile-layout form.woocommerce-form.woocommerce-form-login.login {
+  margin-top: 0;
+}
+
+.mobile-layout.woocommerce-account.woocommerce-page #customer_login form.login .form-row.form-row-wide {
+  padding-bottom: 0;
+}
+
+/* --start-- footer-mstyle2.php */
+
+/* FIX menu icon label position*/
+
+.footer-mstyle2 .footer-container ul.mobile_menu2 > li > a .menu-title {
+  bottom: 0 !important;
+}
+
+/* Fix the footer opening icon position by centering it */
+
+.footer-mstyle2 .footer-container .footer-open {
+  left: 47.8% !important;
+}
+
+/* --end-- footer-mstyle2.php */
+
+/* --start-- FIX MOBILE ONSALE DISPLAY ISSUE */
+
+@media (max-width: 668px) {
+  .onsale {
+    display: none;
+  }
+}
+
+/* --end-- FIX MOBILE ONSALE DISPLAY ISSUE */
+
+/* --start-- OTHER MOBILE STYLES */
+
+@media (max-width: 668px) {
+  .yith-wcwl-add-to-wishlist {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .yith-wcwl-add-to-wishlist .add_to_wishlist {
+    z-index: 7;
+  }
+
+  .woocommerce-wishlist.mobile-layout form table.shop_table tbody td.product-add-to-cart {
+    position: static !important;
+  }
+
+  .woocommerce-wishlist.mobile-layout form table.shop_table tbody td.product-add-to-cart .add_to_cart {
+    position: absolute;
+    right: -2px;
+    bottom: 28px;
+  }
+
+  .woocommerce .wishlist_table td.product-add-to-cart a {
+    display: none !important;
+  }
+
+  .mobile-layout .products-wrapper .products-loop.grid > li.item .item-wrap .item-detail .item-content {
+    padding: 0 !important;
+  }
+
+  .filter-mobile .widget_layered_nav ul > li a {
+    width: auto;
+    padding: 0 1em !important;
+  }
+}
+
+/* --end-- OTHER MOBILE STYLES */
+
+/* --end-- MOBILE STYLES */
+
+/* ___________________________________________________________________________________________ */
+
+/* ___________________________________________________________________________________________ */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* OTHER ISSUE SOLUTIONS COMMON ON MULTIPLE PAGES*/
+
+/* WISHLIST AND CART IMAGES */
+
+/* styles to fix lack of image display for wishlist and cart on pc */
+
+.woocommerce #content table.cart .product-thumbnail,
+.woocommerce table.cart .product-thumbnail,
+.woocommerce-page #content table.cart .product-thumbnail,
+.woocommerce-page table.cart .product-thumbnail {
+  display: block !important;
+}
+
+/* Fix variation container size. make it fit its content */
+
+label.radio-label {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+/* WISHLIST AND CART IMAGES */
+
+/* ------------------------------------------- */
+
+/* PAYMENT METHODS ON FOOTER */
+
+/* fix displayed payment methods on footer to only show the supported methods
+ * in this case, paypal
+ */
+
+/* VISA */
+
+.payment-method li a.payment1 {
+  display: none !important;
+}
+
+/* DISCOVER */
+
+.payment-method li a.payment2 {
+  display: none !important;
+}
+
+/* MASTERCARD */
+
+.payment-method li a.payment3 {
+  display: none !important;
+}
+
+/* PAYPAL */
+
+.payment-method li a.payment4 {
+  display: block;
+}
+
+/* --end-- PAYMENT METHODS ON FOOTER */
+
+/* PRODUCT INTERACTIVE BUTTON DISPLAY  */
+
+/* Fix product buttons on shop and hope page to allow them to fit together in one line 
+*  add to wishlit | add to cart | add to wishlist > buttons
+
+*  NOTE: this solution makes sure the different buttons still use a padding that is
+*  globally related to all the others just as before
+*/
+
+.add_to_cart_button,
+a.button,
+.add_to_wishlist,
+.compare-button a.button.compare,
+.single_add_to_cart_button,
+.product_type_external,
+.product_type_grouped {
+  padding: 0 6px !important;
+}
+
+.products-loop.grid li .products-entry .item-bottom {
+  padding: 0 !important;
+}
+
+/* --end-- PRODUCT INTERACTIVE BUTTON DISPLAY  */
+
+/* --start-- FIX: CATEGORY- CHILD CATEGORY DISPALY */
+
+.product-loop-category li.product-category {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+/* --end-- FIX: CATEGORY- CHILD CATEGORY DISPALY */
+
+/* --start-- Fix: When the product variations
+ appearing on the home page and on the shop page increase in number,
+  they distort the position of the "add to wishlist" icon, 
+  "add to cart" button and the "compare" icon. This makes these icons
+   on the shop page look out of order. */
+
+/* --end-- Fix: When... */
+
+/*
+
+/**
+* Change product title length to be dynamic and fit in its container
+* adding ellipses after overflowing text
+* helps to manage product height on website
+*/
+
+.item-content h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 7px;
+  white-space: nowrap;
+}
+
+/**
+* --start-- MAILCHIMP CSS
+*/
+
+.vc_row.wpb_row.vc_row-fluid.footer-top {
+  padding-top: 1.35em !important;
+}
+
+.mc4wp-alert {
+  padding: 0.1em;
+  border-bottom-left-radius: 0.35em;
+  border-bottom-right-radius: 0.35em;
+  width: 99.9%;
+}
+
+.mc4wp-alert.mc4wp-success {
+  background: #d5ffd7;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 9.6em;
+  margin-top: -1.8em;
+  margin-right: 3em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.mc4wp-alert.mc4wp-success p {
+  font-size: 1.3em;
+}
+
+.mc4wp-alert.mc4wp-error {
+  background: blanchedalmond !important;
+}
+
+.mc4wp-alert.mc4wp-notice {
+  background: aliceblue !important;
+}
+
+.yt-footer-wrap-style1 .footer-top .block-subscribe-footer .title-block {
+  margin-top: 3em;
+}
+
+/**
+* --end-- MAILCHIMP CSS
+*/
+
+/**
+* FAQ(Frequently Asked Questions) Page 
+*  ----------------------------------
+* Fixing the icon after the numbering by making it dissappear
+*/
+
+i.vc_tta-controls-icon.vc_tta-controls-icon-plus::after {
+  display: none !important;
+}
+
+/**
+* --START--PAYMO THANKYOU_PAGE
+*/
+
+.paymo_instructions.thankyou_page.customer_notice {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+  border-collapse: separate;
+  border-radius: 5px;
+  padding: 0.5em 1.5em;
+}
+
+.paymo_related_phones_container {
+  display: flex;
+  font-weight: 600;
+}
+
+.paymo_customer_phone_container {
+  padding-right: 1em;
+  border-right: 1px dotted rgba(0, 0, 0, 0.1);
+}
+
+.paymo_merchant_phone_container {
+  padding-left: 1em;
+  border-left: 1px dotted rgba(0, 0, 0, 0.1);
+}
+
+span.paymo_customer_phone p,
+span.paymo_merchant_phone p {
+  font-size: 1.5em;
+}
+
+/**
+* --END-- PAYMO THANKYOU_PAGE
+*/
+
+/**
+* AJAX LOGIN MODAL
+*/
+
+.block-popup-login .login-line {
+  height: auto;
+}
+
+.modal-dialog .login-line .apsl-login-networks {
+  position: relative;
+  left: 37.5%;
+  padding-top: 4em;
+}
+
+.modal-dialog .login-line .apsl-login-networks .social-networks {
+  position: relative;
+  left: 10%;
+}
+
+.fb_dialog.fb_dialog_advanced.fb_customer_chat_bubble_animated_no_badge.fb_customer_chat_bubble_pop_in {
+  right: 54pt;
+  bottom: 6pt;
+}
+
+/**
+* WOO Currency switcher
+*/
+
+ul.woocs_auto_switcher {
+  height: auto !important;
+  width: 3em !important;
+}
+
+@media (max-width: 668px) {
+  a.woocs_auto_switcher_link {
+    padding: 0.1em !important;
+  }
+}
+
+/*
+  --end-- CUSTOM CHANGES MADE BY "CACIOUS SIAMUNYANGA"
+*/
+

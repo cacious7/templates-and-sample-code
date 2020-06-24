@@ -1,0 +1,3 @@
+-- UPDATE wp_postmeta SET meta_value = ROUND(meta_value * 13.8594, 2) WHERE meta_key IN ("_regular_price", "_sale_price", "_price") AND meta_value != 0 AND meta_value != "";
+-- SELECT * FROM wp_postmeta WHERE meta_key IN ("_sale_price") AND meta_value != 0 -- AND meta_value != "";
+-- DELETE FROM `wp_options` WHERE (`option_name` LIKE '_transient_wc_var_prices_%' OR `option_name` LIKE '_transient_timeout_wc_var_prices_%');

@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;;
+    margin: 0;;
+    padding: 0;;
+}
+
+//NAV
+.__navbar{
+    background: linear-gradient(174deg, #009999 31%, #03d6d6);
+}
+
+
+.__sign_in_wrapper, .__sign_up_wrapper{
+    background: #009999;
+    min-height: 100vh;
+    padding-bottom: 10em;
+}
+
+
+
+.__sign_in_form, .__sign_up_form, .__card, .__new_job_form{
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.__card{
+    box-shadow: none;   
+}
+
+.__sign_in_form:hover, .__sign_up_form:hover, .__card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+// JOBS PAGE
+.__jobs_wrapper{ //last two hex digits are for opacity 
+    background: #00999905;
+}
+
+.__jobs_page_title{
+    color: #009999;
+    margin: 0;
+    background: linear-gradient(to top, #00999915, #00999905);
+    border-bottom: 1px solid #00999925;
+}
+
+div#__job_card_wrapper{
+    background: #d0e2e2ee;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+//PROFILE PAGE
+.__profile_wrapper{
+    background: #d0e2e2ee;
+}
+
+.__name_card_wrapper {
+    background: linear-gradient(174deg, #009999 31%, #03d6d6);
+    margin: 0 !important;
+}
+
+//create new job button
+.__new_job:hover{
+    color: green;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
+}
+
+.__new_job_form{
+    border: 2ps dashed #ff993355
+}
