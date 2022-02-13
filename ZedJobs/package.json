@@ -16,7 +16,7 @@
   "author": "cacious siamunyanga",
   "license": "ISC",
   "dependencies": {
-    "ajv": "^6.5.1",
+    "ajv": "^6.12.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "history": "^1.17.0",
